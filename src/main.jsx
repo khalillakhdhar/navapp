@@ -6,12 +6,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import "./index.css";
 import ErrorPage from "./ErrorPage";
+import "./index.css";
 import Accueil from "./routes/Accueil";
+import Details from "./routes/Details";
 import Propos from "./routes/Propos";
 import Specialite from "./routes/Specialite";
-import Details from "./routes/Details";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/details/:id",
-        element: <Details />,
+        //element: <Details  />,
+        // details with specialité props be passed as props
+        element: <Details  />,
       }
     ],
     
